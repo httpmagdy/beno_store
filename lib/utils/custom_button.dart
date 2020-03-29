@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CustomButton extends StatelessWidget {
 
@@ -10,11 +11,13 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return RaisedButton(
       onPressed: () {},
-      elevation: 5,
+      elevation: 5.0,
       textColor: Colors.white,
       padding: const EdgeInsets.all(0.0),
       child: Container(
-        width: width ?? 260,
+        width: width ?? 260.0,
+        height: 40.0,
+        alignment: Alignment.center,
         decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
@@ -23,11 +26,10 @@ class CustomButton extends StatelessWidget {
               ],
             )
         ),
-        padding: const EdgeInsets.symmetric(vertical: 11),
         child: Text(
           text,
           textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 16),
+          style: GoogleFonts.ubuntu(fontSize: 16),
         ),
       ),
     );

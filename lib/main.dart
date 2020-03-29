@@ -1,4 +1,5 @@
-import 'package:benostore/start%20screens/welcome.dart';
+import './screens/start_screens/login.dart';
+import 'screens/start_screens/welcome.dart';
 import 'package:flutter/material.dart';
 import './screens/home.dart';
 import './utils/main_theme.dart';

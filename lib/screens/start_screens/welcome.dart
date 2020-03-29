@@ -1,7 +1,6 @@
-import '../utils/custom_button.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../../utils/custom_button.dart';
 
 class Welcome extends StatelessWidget {
   @override
@@ -47,7 +46,7 @@ class Welcome extends StatelessWidget {
         child: RichText(
           textAlign: TextAlign.center,
           text: TextSpan(
-            style: GoogleFonts.raleway(fontSize: 20, color: Color(0xFF707070)),
+            style: GoogleFonts.lato(fontSize: 20, color: Color(0xFF707070)),
             children: <TextSpan>[
               TextSpan(text: 'Welcome to '),
               TextSpan(
@@ -65,7 +64,7 @@ class Welcome extends StatelessWidget {
     return Container(
       alignment: Alignment.center,
       width: 300,
-      child: Image.asset('assets/images/welcome.png'),
+      child: Image.asset('assets/images/welcome.png', fit: BoxFit.cover),
     );
   }
 
@@ -78,7 +77,7 @@ class Welcome extends StatelessWidget {
           CustomButton(text: 'Log in'),
           FlatButton(
             onPressed: () {},
-            child: Text('Signup', style: TextStyle(fontSize: 16)),
+            child: Text('Signup', style: GoogleFonts.ubuntu(fontSize: 16)),
             textColor: Color(0xFF454242),
             padding: EdgeInsets.all(0),
           )
